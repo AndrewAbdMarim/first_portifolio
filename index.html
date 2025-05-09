@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>My Portifolio</title>
+</head>
+<body>
+  
+    <script src="js/bootstrap.bundle.js"></script>
+    <style>
+      img {
+      transform: scale(1.5); /* Increase the size of the image more */
+      transform-origin: right bottom; /* Adjust the origin to the bottom */
+      margin-top: 70px; /* Move the image down by 7 pixels */
+      }
+    </style>
+    <header>
+      <nav class="navbar navbar-expand-lg" style="background-color: rgb(0, 192, 26);">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">Andrew</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Features</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Pricing</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+    
+    <div style="position: absolute; top: 70px; left: 10px; width: 330px; padding: 15px; border: 1px solid #ccc; border-radius: 10px; background-color: #f9f9f9; text-align: center; font-size: 1.25em;">
+      <img src="img/me.jpg" alt="Andrew Abd Marim" style="width: 150px; height: 150px; border-radius: 50%; border: 3px solid #007bff; margin-bottom: 15px;">
+      <ul style="list-style: none; padding: 0; margin: 0; text-align: left; font-family: Arial, sans-serif; font-size: 0.9em; color: #333;">
+        <li style="margin-bottom: 5px;"><strong>Name:</strong> Andrew Abd Marim</li>
+        <li style="margin-bottom: 5px;"><strong>Age:</strong> 22 years old</li>
+        <li style="margin-bottom: 5px;"><strong>Job:</strong> Surveying Engineer</li>
+        <li style="margin-bottom: 5px;"><strong>Email:</strong> <a href="mailto:programmerdod@gmail.com" style="color: #007bff; text-decoration: none;">programmerdod@gmail.com</a></li>
+        <li><strong>Phone:</strong> <a href="tel:+201152223818" style="color: #007bff; text-decoration: none;">+20 115 222 3818</a></li>
+      </ul>
+    </div>
+
+
+  
+  <div style="position: fixed; top: 70px; right: 20px; text-align: left; font-family: Arial, sans-serif; line-height: 1.5; color: #333; width: 260px; padding: 15px; border: 1px solid #ccc; border-radius: 5px; background-color: #f9f9f9;">
+    <h3 style="margin-bottom: 10px; font-size: 1.2em; color: #007bff;">My Experience</h3>
+    <p style="margin: 0; font-size: 0.9em;"></p>
+      <form>
+        <label for="htmlRating" style="display: inline-block; width: 150px; text-align: left;">HTML</label>
+        <input type="range" id="htmlRating" name="htmlRating" min="0" max="100" step="1" oninput="updateRatingValue('htmlValue', this.value)" style="vertical-align: middle;">
+        <span id="htmlValue">50%</span>
+        <br><br>
+        </form>
+        
+        <form>
+        <label for="cssRating" style="display: inline-block; width: 150px; text-align: left;">CSS</label>
+        <input type="range" id="cssRating" name="cssRating" min="0" max="100" step="1" oninput="updateRatingValue('cssValue', this.value)" style="vertical-align: middle;">
+        <span id="cssValue">50%</span>
+        <br><br>
+        </form>
+        
+        <form>
+        <label for="jsRating" style="display: inline-block; width: 150px; text-align: left;">JS</label>
+        <input type="range" id="jsRating" name="jsRating" min="0" max="100" step="1" oninput="updateRatingValue('jsValue', this.value)" style="vertical-align: middle;">
+        <span id="jsValue">50%</span>
+        <br><br>
+        </form>
+        
+          <form>
+        <label for="bsRating" style="display: inline-block; width: 150px; text-align: left;">BS (Bootstrap)</label>
+        <input type="range" id="bsRating" name="bsRating" min="0" max="100" step="1" oninput="updateRatingValue('bsValue', this.value)" style="vertical-align: middle;">
+        <span id="bsValue">50%</span>
+        <br><br>
+        </form>
+        </section>
+        
+        <script>
+          function updateRatingValue(id, value) {
+        document.getElementById(id).textContent = value + '%';
+          }
+        </script>
+      </div>
+      
+
+      <div style="position: fixed; bottom: 20px; right: 20px; text-align: left; font-family: Arial, sans-serif; line-height: 1.5; color: #333; width: 260px; padding: 15px; border: 1px solid #ccc; border-radius: 5px; background-color: #f9f9f9;">
+        <h3 style="margin-bottom: 10px; font-size: 1.2em; color: #007bff;">About Me</h3>
+        <p style="margin: 0; font-size: 0.9em;"></p>
+          <div class="Experience">
+        <section style="font-size: 1.5em;"></section>
+          Hello! I'm <strong>Andrew Abd Marim</strong>, a 22-year-old <strong>Surveying Engineer</strong> with a passion for programming.
+          Feel free to reach out to me at <a href="mailto:programmerdod@gmail.com" style="color: #007bff; text-decoration: none;">programmerdod@gmail.com</a>
+          or call me at <a href="tel:+201152223818" style="color: #007bff; text-decoration: none;">+20 115 222 3818</a>.
+          </div>
+      </div>
+
+   
+    </p>
+</body>
+</html>

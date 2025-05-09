@@ -1,0 +1,27 @@
+
+
+.navbar.navbar-expand-lg{
+    font-size: 20px;
+    font-weight: bold;
+    background-image: linear-gradient(rgb(0, 195, 0), rgb(58, 243, 58));
+    padding: 7px;
+    box-sizing: 50;
+    box-shadow: 0.5px 7px 10px lightblue;
+}
+
+.navbar-brand{
+    font-size: 27px;
+    font-weight: bold;
+}
+
+
+.bar{
+    width: 100%;
+}
+.progress.html{
+    background-color: rgb(0, 183, 255);
+    width: 85%;
+    
+}
+
+
